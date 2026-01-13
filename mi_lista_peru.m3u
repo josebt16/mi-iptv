@@ -7,5 +7,6 @@ https://cdnb.tvperu.gob.pe/live/clive2/index.m3u8
 https://cdnb.tvperu.gob.pe/live/clive3/index.m3u8
 #EXTINF:-1 group-title="Perú", Justicia TV
 https://sc.pj.gob.pe/live/justiciatv/playlist.m3u8
-#EXTINF:-1 group-title="Perú", Disney Chanel
+#EXTINF:-1
 https://iptv-org.github.io/iptv/countries/pe.m3u
+
