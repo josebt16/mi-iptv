@@ -77,8 +77,12 @@ def main():
                 
                 if link:
                     f.write(f'\n#EXTINF:-1 group-title="{canal["grupo"]}" tvg-logo="", {canal["nombre"]}\n')
-                    # Importante: A veces estos links requieren el Referer original
-                    f.write(f'{link}\n') 
+                    
+                    # --- CAMBIO AQUÍ ---
+                    # Agregamos el User-Agent al final para que el reproductor de la TV no sea bloqueado
+                    ua_string = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                    f.write(f'{link}|User-Agent={ua_string}\n') 
+                    # -------------------
                 else:
                     print(f"FALLO: No se encontró token para {canal['nombre']}")
 
