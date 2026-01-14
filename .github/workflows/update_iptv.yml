@@ -2,7 +2,7 @@ name: Actualizar IPTV con Navegador Real
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Ejecutar cada 30 min
+    - cron: '*/5 * * * *' # Ejecutar cada 30 min
   workflow_dispatch:
 
 jobs:
