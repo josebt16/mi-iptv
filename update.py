@@ -1,4 +1,4 @@
-import requests
+import cloudscraper # Usamos cloudscraper en vez de requests directo
 import re
 import time
 
@@ -6,79 +6,68 @@ import time
 OUTPUT_FILE = "mi_lista_peru.m3u"
 SITIO_BASE = "https://www.tvporinternet2.com"
 
-# Lista de canales que quieres rastrear. 
-# Debes buscar la URL exacta en la web y ponerla aquí.
-# He llenado algunos basados en tus capturas.
+# IMPORTANTE: Verifica que estas URLs existan entrando manualmente a la web.
+# Copia la parte final de la URL del navegador.
 CANALES = [
     {"nombre": "Disney Channel", "url": "disney-channel-en-vivo-por-internet.html", "grupo": "Infantil"},
-    {"nombre": "Disney Junior", "url": "disney-junior-en-vivo-por-internet.html", "grupo": "Infantil"},
-    {"nombre": "Cartoon Network", "url": "cartoon-network-en-vivo-por-internet.html", "grupo": "Infantil"},
-    {"nombre": "Nick", "url": "nick-en-vivo-por-internet.html", "grupo": "Infantil"},
-    {"nombre": "Discovery Kids", "url": "discovery-kids-en-vivo-por-internet.html", "grupo": "Infantil"},
     {"nombre": "Star Channel", "url": "star-channel-en-vivo-por-internet.html", "grupo": "Cine"},
-    # Agrega aquí el resto de canales siguiendo el formato...
+    {"nombre": "Cartoon Network", "url": "cartoon-network-en-vivo-por-internet.html", "grupo": "Infantil"},
+    {"nombre": "ESPN 5", "url": "espn-5-en-vivo-por-internet.html", "grupo": "Deportes"}, # Agregado basado en tu captura
 ]
-
-# Headers para parecer un navegador real
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Referer": "https://www.tvporinternet2.com/",
-}
 
 def obtener_m3u8(slug_url):
     full_url = f"{SITIO_BASE}/{slug_url}"
-    print(f"Buscando en: {full_url}")
+    print(f"--------------------------------------------------")
+    print(f"Procesando: {canal['nombre']} ({full_url})")
+    
+    # Creamos un scraper que simula ser un navegador real
+    scraper = cloudscraper.create_scraper()
     
     try:
-        # PASO 1: Entrar a la página principal del canal
-        s = requests.Session()
-        resp = s.get(full_url, headers=HEADERS)
+        # PASO 1: Entrar a la página principal
+        resp = scraper.get(full_url)
         
         if resp.status_code != 200:
-            print(f"Error cargando página: {resp.status_code}")
+            print(f"ERROR HTTP: {resp.status_code}")
             return None
 
-        # PASO 2: Buscar el IFRAME del reproductor
-        # Buscamos algo como: <iframe src="https://..." ...>
+        # PASO 2: Buscar el IFRAME
+        # Buscamos <iframe src="...">
         iframe_match = re.search(r'<iframe[^>]+src=["\'](https?://[^"\']+)["\']', resp.text)
         
         if not iframe_match:
-            print("No se encontró iframe del reproductor.")
+            print("FALLO: No se encontró iframe en el HTML.")
+            # Debug: Imprimir un poco del HTML para ver qué devolvió (si es bloqueo o error 404)
+            print(f"Snippet HTML: {resp.text[:200]}...") 
             return None
             
         iframe_url = iframe_match.group(1)
         print(f"Iframe encontrado: {iframe_url}")
 
-        # PASO 3: Entrar al iframe para sacar el token
-        # Importante: Actualizamos el Referer para que el iframe crea que venimos de la web
-        headers_iframe = HEADERS.copy()
-        headers_iframe["Referer"] = full_url
+        # PASO 3: Entrar al iframe (con Referer correcto)
+        # El sitio del video (laligafutboldeportes) valida que vengas de tvporinternet2
+        headers = {"Referer": full_url}
+        resp_iframe = scraper.get(iframe_url, headers=headers)
         
-        resp_iframe = s.get(iframe_url, headers=headers_iframe)
-        
-        # PASO 4: Buscar el .m3u8 con token dentro del código del iframe
-        # Buscamos patrones comunes de Clappr o variables JS
-        # Pattern: "source": "https://....m3u8?token=..."
+        # PASO 4: Buscar el .m3u8 con token
+        # Regex ajustado para capturar cualquier m3u8 con token
         m3u8_match = re.search(r'["\'](https?://[^"\']+\.m3u8\?token=[^"\']+)["\']', resp_iframe.text)
         
         if m3u8_match:
-            link = m3u8_match.group(1)
-            # A veces los enlaces tienen barras invertidas \ escapadas, las quitamos
-            link = link.replace('\\', '')
+            link = m3u8_match.group(1).replace('\\', '')
+            print("¡EXITO! Enlace extraído.")
             return link
         else:
-            print("No se encontró .m3u8 en el iframe.")
-            # Intento secundario: buscar cualquier m3u8
-            m3u8_generic = re.search(r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)', resp_iframe.text)
-            if m3u8_generic:
-                return m3u8_generic.group(1).replace('\\', '')
+            print("FALLO: No se encontró patrón .m3u8 en el iframe.")
+            print(f"Snippet Iframe: {resp_iframe.text[:200]}...")
             return None
 
     except Exception as e:
-        print(f"Excepción: {e}")
+        print(f"EXCEPCION: {e}")
         return None
 
-def main():
+if __name__ == "__main__":
+    count = 0
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         
@@ -87,15 +76,11 @@ def main():
             
             if link:
                 f.write(f'\n#EXTINF:-1 group-title="{canal["grupo"]}" tvg-logo="", {canal["nombre"]}\n')
-                # Agregamos los headers al link para que funcione en el reproductor final
-                f.write(f'{link}|User-Agent={HEADERS["User-Agent"]}\n')
-                print(f"✔ {canal['nombre']} actualizado.")
-            else:
-                print(f"✘ {canal['nombre']} falló.")
+                f.write(f'{link}\n') # Cloudscraper ya maneja headers, pero el player final quizás no.
+                count += 1
             
-            # Esperamos 1 segundo para no saturar la web y que no nos bloqueen
-            time.sleep(1)
-
-if __name__ == "__main__":
-    main()
-  
+            time.sleep(2) # Pausa ética
+            
+    print(f"--------------------------------------------------")
+    print(f"Resumen: Se actualizaron {count} canales.")
+    
