@@ -12,12 +12,13 @@ https://cdnhd.iblups.com/hls/3f2cb1658d114f2693eff18d83199e677.m3u8
 #EXTINF:-1 group-title="Mexico", Estrellas
 https://channel01-onlymex.akamaized.net/hls/live/2022749/event01/index.m3u8
 
+
 #EXTINF:-1 group-title="Infantil", Disney Channel
-https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/28_.m3u8?token=84wMBhW-Fsgoothvy_RSng&expires=1768368917
+https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/28_.m3u8?token=84wMBhW-Fsgoothvy_RSng&expires=1768368917|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Perú", NAT GEO
-https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/47_.m3u8?token=3AJC5b41YAoxs7qlvH5wfg&expires=1768351361
+https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/47_.m3u8?token=3AJC5b41YAoxs7qlvH5wfg&expires=1768351361|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Perú", TNT EN VIVO
-https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/52_.m3u8?token=ior_QZ5G6hotAKSfgyhLOw&expires=1768351479
+https://live.saohgdasregions.fun:9092/MjAwLjEwNi44OS4zMA==/52_.m3u8?token=ior_QZ5G6hotAKSfgyhLOw&expires=1768351479|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
