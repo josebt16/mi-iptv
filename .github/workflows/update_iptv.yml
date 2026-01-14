@@ -1,10 +1,9 @@
-name: Actualizar IPTV TVPorInternet2
+name: Actualizar IPTV con Navegador Real
 
 on:
   schedule:
-    # Se ejecuta cada 25 minutos
-    - cron: '*/25 * * * *'
-  workflow_dispatch: # Botón manual
+    - cron: '*/30 * * * *' # Ejecutar cada 30 min
+  workflow_dispatch:
 
 jobs:
   update:
@@ -17,13 +16,16 @@ jobs:
       - name: Checkout del repositorio
         uses: actions/checkout@v3
 
-      - name: Instalar Python
+      - name: Configurar Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: Instalar librerías
-        run: pip install cloudscraper requests
+      - name: Instalar Playwright y dependencias
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps
 
       - name: Correr script de actualización
         run: python update.py
@@ -33,6 +35,5 @@ jobs:
           git config --global user.name "IPTV Bot"
           git config --global user.email "bot@noreply.github.com"
           git add mi_lista_peru.m3u
-          git commit -m "Auto-update: nuevos tokens" || exit 0
+          git commit -m "Auto-update: nuevos tokens via Playwright" || exit 0
           git push
-          
