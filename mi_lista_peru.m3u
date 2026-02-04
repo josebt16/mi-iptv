@@ -1,13 +1,16 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Disney Channel
-https://live.saohgdasregions.fun:9092/MjAuMTY5Ljc2LjIxNA==/28_.m3u8?token=JUX4yIFG1SvJs9bdGeiniQ&expires=1770262075|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live.saohgdasregions.fun:9092/NTIuMTc2LjEyNC4xODY=/28_.m3u8?token=39WYppNk5TnfHLkrXNP3nQ&expires=1770265455|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Cine" tvg-logo="", Star Channel
-https://live.saohgdasregions.fun:9092/MjAuMTY5Ljc2LjIxNA==/54_.m3u8?token=29l8ELK2r-S9_4NvoC0XgQ&expires=1770262086|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live.saohgdasregions.fun:9092/NTIuMTc2LjEyNC4xODY=/54_.m3u8?token=8Kl3wI8L28l5M8YjG5P4jg&expires=1770265464|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Cartoon Network
-https://live.saohgdasregions.fun:9092/MjAuMTY5Ljc2LjIxNA==/31_.m3u8?token=aHdJMWZCH3dPkT02xY3Tsg&expires=1770262096|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://live.saohgdasregions.fun:9092/NTIuMTc2LjEyNC4xODY=/31_.m3u8?token=O3-g2XZHJFXYQO23VFmFGg&expires=1770265474|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Deportes" tvg-logo="", ESPN 5
-https://deportes.ksdjugfsddeports.com:9092/MjAuMTY5Ljc2LjIxNA==/24_.m3u8?token=LkfAAIQp4nl5iwcjCP57Gg&expires=1770262116|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://deportes.ksdjugfsddeports.com:9092/NTIuMTc2LjEyNC4xODY=/24_.m3u8?token=lHrvcNGXpUaPEpZVyoJPhQ&expires=1770265486|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+#EXTINF:-1 group-title="Mexico" tvg-logo="", Azteca 7
+https://live.saohgdasregions.fun:9092/NTIuMTc2LjEyNC4xODY=/1_.m3u8?token=iPLrA4jOuN2fhVagPCAPUw&expires=1770265497|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
