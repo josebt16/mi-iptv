@@ -1,16 +1,1 @@
 #EXTM3U
-
-#EXTINF:-1 group-title="Infantil" tvg-logo="", Disney Channel
-https://regionales.saohgdasregions.fun:9092/MTMwLjEzMS4yMDAuNDg=/28_.m3u8?token=A3oDsNdgIYFPt3cuD3QekQ&expires=1775341070|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Cine" tvg-logo="", Star Channel
-https://regionales.saohgdasregions.fun:9092/MTMwLjEzMS4yMDAuNDg=/54_.m3u8?token=kVMniiOgAHKmApm9jVLTOg&expires=1775341080|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Infantil" tvg-logo="", Cartoon Network
-https://regionales.saohgdasregions.fun:9092/MTMwLjEzMS4yMDAuNDg=/31_.m3u8?token=__Z5NhS8Web1TX6Kp13JOg&expires=1775341089|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Deportes" tvg-logo="", ESPN 5
-https://deportes.ksdjugfsddeports.com:9092/MTMwLjEzMS4yMDAuNDg=/24_.m3u8?token=TDkmFd0P67pJermQPonReg&expires=1775330298|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Mexico" tvg-logo="", Azteca 7
-https://regionales.saohgdasregions.fun:9092/MTMwLjEzMS4yMDAuNDg=/1_.m3u8?token=F3zutZSpOC2d6rJacHisyw&expires=1775341107|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
