@@ -1,13 +1,16 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Disney Channel
-https://regionales.saohgdasregions.fun:9092/MjAuNTUuMTMuMTYy/28_.m3u8?token=4ZSlPeRhYuFTI7Jdb0_3rA&expires=1776236514|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MjAuNTcuNDcuMjI4/28_.m3u8?token=ZkEHK0RrTNGm_dyDyFcJyA&expires=1776240761|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Cine" tvg-logo="", Star Channel
-https://regionales.saohgdasregions.fun:9092/MjAuNTUuMTMuMTYy/54_.m3u8?token=EsvZYfA3iKT4mnMi7tp4IA&expires=1776236526|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MjAuNTcuNDcuMjI4/54_.m3u8?token=atP1e40mnfaBXtR9Y4anaQ&expires=1776240772|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Cartoon Network
-https://regionales.saohgdasregions.fun:9092/MjAuNTUuMTMuMTYy/31_.m3u8?token=_lgfOWjg5Rf0yx4mCZprNQ&expires=1776236542|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MjAuNTcuNDcuMjI4/31_.m3u8?token=Z8IrJWIwXvsQP77ZeabTpg&expires=1776240782|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+#EXTINF:-1 group-title="Deportes" tvg-logo="", ESPN 5
+https://deportes.ksdjugfsddeports.com:9092/MjAuNTcuNDcuMjI4/24_.m3u8?token=MXqqF4yzw2L6s4IMKL5pjg&expires=1776229994|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Mexico" tvg-logo="", Azteca 7
-https://regionales.saohgdasregions.fun:9092/MjAuNTUuMTMuMTYy/1_.m3u8?token=tX3gW9kcniwxKDFbZDGp4w&expires=1776236599|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MjAuNTcuNDcuMjI4/1_.m3u8?token=NFeJBBZ_Y5LG_49qdVLg8w&expires=1776240807|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
