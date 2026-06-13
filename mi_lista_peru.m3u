@@ -1,16 +1,10 @@
 #EXTM3U
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Disney Channel
-https://regionales.saohgdasregions.fun:9092/NTcuMTU0LjEzLjI0Nw==/28_.m3u8?token=YLun00GnmX8OVM8jbsrPWA&expires=1781351685|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Cine" tvg-logo="", Star Channel
-https://regionales.saohgdasregions.fun:9092/NTcuMTU0LjEzLjI0Nw==/54_.m3u8?token=nisip27XHeCKTXoO0FNgOA&expires=1781351704|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MTM1LjExOS4xMzIuMTQ2/28_.m3u8?token=xXqgozQ7ekN4YSd_4yBkTA&expires=1781362176|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Infantil" tvg-logo="", Cartoon Network
-https://regionales.saohgdasregions.fun:9092/NTcuMTU0LjEzLjI0Nw==/31_.m3u8?token=CfOCHXnsrH1DY8VzBLxZFQ&expires=1781351727|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://regionales.saohgdasregions.fun:9092/MTM1LjExOS4xMzIuMTQ2/31_.m3u8?token=XOSWWWFU0rtQLm1rqpruhg&expires=1781362265|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 
 #EXTINF:-1 group-title="Deportes" tvg-logo="", ESPN 5
-https://deportes.ksdjugfsddeports.com:9092/NTcuMTU0LjEzLjI0Nw==/24_.m3u8?token=YEhV1M_KdIqvZqi6g796Lw&expires=1781340950|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-
-#EXTINF:-1 group-title="Mexico" tvg-logo="", Azteca 7
-https://regionales.saohgdasregions.fun:9092/NTcuMTU0LjEzLjI0Nw==/1_.m3u8?token=JbOWfOWkxwyLi-AzNYLFIA&expires=1781351780|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://deportes.ksdjugfsddeports.com:9092/MTM1LjExOS4xMzIuMTQ2/24_.m3u8?token=yCHtbyO67enP4YB08DuwGw&expires=1781351493|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
